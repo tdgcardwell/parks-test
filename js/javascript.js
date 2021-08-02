@@ -10,6 +10,8 @@ const parks = ["Skiles Test",
                 "River Road",
                 "School and Goats",
                 "Sahm",
+                "Hundred Acres",
+                "Fall Creek Trail",
                 "Central"];
 
 const random = Math.floor(Math.random() * parks.length);
