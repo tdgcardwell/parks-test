@@ -21,10 +21,14 @@ function whichPark() {
   const random = Math.floor(Math.random() * parks.length);
   console.log(random, parks[random]);
 
-
   var paragraph = document.getElementById("p");
-  var text = document.createTextNode(parks[random]);
+
+  // the extra space just to separate multiples until I find a better solution.
+  var text = document.createTextNode(parks[random] + " ");
+
   paragraph.appendChild(text);
+
+
 }
 
 function refreshPage() {
