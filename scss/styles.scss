@@ -2,10 +2,12 @@
 
 $dark-green: #1f401f;
 $light-green: lighten($dark-green, 25%);
+$lightest: lighten($light-green, 40%);
+$alt : complement($dark-green);
 
 .wrapper {
   min-height: 100vh;
-  background-color: #ccc;
+  background-color: $lightest;
   padding: 2rem;
 }
 
@@ -34,6 +36,7 @@ h1,
 #p {
   margin: auto;
   font-size: 1.6rem;
+  color: $light-green;
 }
 
 .go {
@@ -49,4 +52,8 @@ h1,
   & + .go {
     margin-left: 1rem;
   }
+}
+
+.reset {
+  background-color: $alt;
 }
