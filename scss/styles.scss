@@ -1,5 +1,8 @@
 @import "../css/normalize";
 
+$dark-green: #1f401f;
+$light-green: lighten($dark-green, 25%);
+
 .wrapper {
   min-height: 100vh;
   background-color: #ccc;
@@ -11,8 +14,12 @@ h1,
   text-align: center;
 }
 
+#parks-test {
+    color: $dark-green;
+}
+
 .box {
-  border: 4px solid red;
+  border: 4px solid $dark-green;
   min-height: 4rem;
   display: flex;
   background-color: white;
@@ -34,6 +41,8 @@ h1,
   padding: 1rem;
   border: none;
   border-radius: 10px;
+  background: $light-green;
+  color: white;
 
   // box-shadow: 2px -1px 30px 2px rgba(0,0,0,0.69);
 
