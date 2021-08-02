@@ -4,6 +4,9 @@
 // borrowed random generating code
 // https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
 
+// borrowed text code
+// https://stackoverflow.com/questions/41764061/adding-text-to-an-existing-text-element-in-javascript-via-dom
+
 const parks = ["Skiles Test",
                 "Heritage",
                 "Founders",
@@ -14,17 +17,13 @@ const parks = ["Skiles Test",
                 "Fall Creek Trail",
                 "Central"];
 
-const random = Math.floor(Math.random() * parks.length);
-console.log(random, parks[random]);
-
-
-
-// borrowed text code
-var paragraph = document.getElementById("p");
-var text = document.createTextNode(parks[random]);
-// https://stackoverflow.com/questions/41764061/adding-text-to-an-existing-text-element-in-javascript-via-dom
-
 function whichPark() {
+  const random = Math.floor(Math.random() * parks.length);
+  console.log(random, parks[random]);
+
+
+  var paragraph = document.getElementById("p");
+  var text = document.createTextNode(parks[random]);
   paragraph.appendChild(text);
 }
 
